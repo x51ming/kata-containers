@@ -40,16 +40,7 @@ jobs:
         asset:
           - agent
           - busybox
-          - cloud-hypervisor
-          - firecracker
           - kernel
-          - kernel-dragonball-experimental
-          - kernel-nvidia-gpu
-          - nydus
-          - ovmf
-          - qemu
-          - stratovirt
-          - virtiofsd
     env:
       PERFORM_ATTESTATION: ${{ matrix.asset == 'agent' && inputs.push-to-registry == 'yes' && 'yes' || 'no' }}
     steps:
