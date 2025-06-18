@@ -136,7 +136,6 @@ jobs:
         asset:
           - rootfs-image
           - rootfs-initrd
-          - rootfs-nvidia-gpu-initrd
     steps:
       - name: Login to Kata Containers quay.io
         if: ${{ inputs.push-to-registry == 'yes' }}
